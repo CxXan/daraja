@@ -9,7 +9,99 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        /* <!-- The drop down payment div --> */
+.drp_pay_div{
+    /* position: absolute;
+    top: 0;
+    left: 0;
+    right: 0; */
+    position: relative;
+    background: linear-gradient(to bottom, rgb(4, 126, 15), rgb(97, 99, 6));
+    width: 100%;
+    height: 100vh;
+    /* z-index: 5; */
+    /* transform: translateY(-100%); */
+    /* transition: all .4s linear; */
+}
+
+.drp_pay_div_toggle{
+    transform: translateY(0%);
+}
+
+.darken{
+    background: #000000;
+}
+
+.dash_nav{
+    min-height: 10vh;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+    background: #00000099;
+}
+
+.dash_nav h2{
+    font-size: 1.5rem;
+    text-transform: capitalize;
+}
+
+.nav_image{
+    width: 50px;
+    height: 50px;
+    background: yellow;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+
+.byf form{
+    min-height: 90vh;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.odp{
+    min-height: 450px;
+    width: 400px;
+    border-radius: .5rem;
+    background: #00000099;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 1rem;
+}
+
+:is(.payment_d, .order_d) h2{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 1.8rem;
+    line-height: 2;
+    color: #ffffff;
+}
+
+:is(.payment_d, .order_d) h2:first-child{
+    border-bottom: 1px solid #fff;
+}
+
+.pay_firm{
+    width: 100%;
+    height: 150px;
+    /* background: rosybrown; */
+    border-radius: .5rem;
+    overflow: hidden;
+}
+
+.pay_firm img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+    </style>
 </head>
 <body>
     <!-- The drop down payment div -->
