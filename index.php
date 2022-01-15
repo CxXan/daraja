@@ -212,7 +212,7 @@ img{
         </nav> 
 
         <div class="byf">
-            <form action="mpesa_payment_form.php" method="POST">
+            <form action="stk_push.php" method="POST">
                 <div class="odp payment_d">
                     <h2>proceed to checkout</h2>
                     <div class="checkout_">
