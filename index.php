@@ -10,6 +10,49 @@
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
+body{
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    background: #000000;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.nav{
+    justify-content: space-between;
+    height: 10vh;
+    padding: 0 1rem;
+    align-items: center;
+}
+.nav .logo a img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.lk > a{
+    width: 100px;
+    text-align: center;
+}
         /* <!-- The drop down payment div --> */
 .drp_pay_div{
     /* position: absolute;
@@ -100,7 +143,54 @@
     height: 100%;
     object-fit: cover;
 }
+.btn_checkout{
+    font-size: 1rem;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    cursor: pointer;
+    color: rgb(4, 126, 15);
+}
 
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.btn{
+    cursor: pointer;
+    border: none;
+    font-size: 1rem;
+    padding: .6rem 1.2rem;
+    text-transform: capitalize;
+    color: #fff;
+    border-radius: 2rem;
+}
+
+
+.checkout_{
+    width: 100%;
+    height: 250px;
+    background: rgb(4, 126, 15);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: .5rem;
+}
+
+.checkout_ label{
+    text-transform: capitalize;
+    font-size: 1.1rem;
+    color: #ffffff;
+}
+
+.checkout_ input{
+    padding: 0 1rem;
+    height: 40px;
+    border-radius: 2rem;
+    outline: none;
+    border: none;
+}
     </style>
 </head>
 <body>
@@ -118,7 +208,7 @@
             <div class="trans_recrs">
                 <a href="#">checkout / payment page</a>
             </div>
-            <a href="../myo.php" class="btn btn-signOut" id="flipUp">Back to buying</a>
+            <a href="#" class="btn btn-signOut" id="flipUp">Back to buying</a>
         </nav> 
 
         <div class="byf">
@@ -133,7 +223,7 @@
                         <input type="submit" value="Pay now" name="submit" class="btn_checkout">
                     </div>
                     <div class="pay_firm">
-                        <img src="../images/mpesa.png" alt="M-Pesa Image">
+                        <img src="mpesa.png" alt="M-Pesa Image">
                     </div>
                 </div>
             </form>
